@@ -9124,7 +9124,7 @@ body.locked .page-wrapper {
   font-weight: 600;
   color: var(--nisoz-black);
   border: 1px solid var(--nisoz-black);
-  padding: 30px 20px 30px 34px;
+  padding: 10px 20px 10px 34px;
   margin-bottom: -1px;
 }
 
