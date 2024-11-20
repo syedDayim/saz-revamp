@@ -9082,7 +9082,7 @@ body.locked .page-wrapper {
 .choose-one__content {
   position: relative;
   z-index: 3;
-  padding: 120px 0 0;
+  /* padding: 120px 0 0; */
 }
 
 @media (max-width: 991px) {
@@ -14365,3 +14365,105 @@ body.boxed-wrapper .main-menu__phone {
   position: relative;
   z-index: 1;
 }
+
+
+
+
+
+.fact-one-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px; /* Adjust spacing between cards */
+}
+
+@media (min-width: 1200px) {
+  .fact-one-grid {
+      grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+
+
+.company-prof-container{
+  /* border: 2px solid red; */
+  height: 300px;
+}
+
+
+/* Ensure images are responsive and have consistent styling */
+.choose-one__content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Adjust the button styling */
+.nisoz-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Change to your desired button color */
+  color: #333333; /* Change to your desired text color */
+  border-radius: 4px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nisoz-btn:hover {
+  background-color: #333333; /* Hover background color */
+  color: #ffffff; /* Hover text color */
+}
+
+.nisoz-btn__shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nisoz-btn__text {
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+}
+
+/* Adjust Fact Section */
+.choose-one__fact {
+  text-align: center;
+}
+
+.choose-one__fact__icon span {
+  font-size: 2rem; /* Adjust icon size as needed */
+  color: #ffffff; /* Icon color */
+}
+
+.choose-one__fact__count {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.choose-one__fact__title {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .company-prof-container {
+      flex-direction: column;
+  }
+  
+  .company-prof-container .col-md-6 {
+      text-align: center;
+  }
+
+  .company-prof-container .col-md-6.text-md-end {
+      text-align: center !important;
+  }
+}
+
