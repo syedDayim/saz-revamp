@@ -14398,32 +14398,8 @@ body.boxed-wrapper .main-menu__phone {
 }
 
 /* Adjust the button styling */
-.nisoz-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ffffff; /* Change to your desired button color */
-  color: #333333; /* Change to your desired text color */
-  border-radius: 4px;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s, color 0.3s;
-}
 
-.nisoz-btn:hover {
-  background-color: #333333; /* Hover background color */
-  color: #ffffff; /* Hover text color */
-}
 
-.nisoz-btn__shape {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
-  top: 0;
-  left: 0;
-  transition: transform 0.3s, opacity 0.3s;
-}
 
 .nisoz-btn__text {
   position: relative;
@@ -14467,3 +14443,12 @@ body.boxed-wrapper .main-menu__phone {
   }
 }
 
+.cpd-btn{
+  background-color: #000000;
+  padding: 10px;
+  color: white;
+}
+
+.cpd-btn:hover{
+  color: white;
+}
