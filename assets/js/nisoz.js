@@ -712,3 +712,21 @@
   });
 
 })(jQuery);
+
+
+
+// marquee Javasctipt
+
+
+const iconContainer = document.querySelector('.icon-container');
+
+function startMarquee() {
+  iconContainer.style.animationPlayState = 'running';
+}
+
+function stopMarquee() {
+  iconContainer.style.animationPlayState = 'paused';
+}
+
+iconContainer.addEventListener('mouseover', stopMarquee);
+iconContainer.addEventListener('mouseout', startMarquee);

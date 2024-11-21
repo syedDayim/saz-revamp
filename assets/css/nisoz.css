@@ -6014,8 +6014,8 @@ body.locked .page-wrapper {
 .about-one__box__top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 12px;
+  gap: 10px;
 }
 
 .about-one__box__title {
@@ -9527,7 +9527,7 @@ body.locked .page-wrapper {
 }
 
 .fact-one__item__title {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--nisoz-color2);
   letter-spacing: 1.6px;
@@ -14603,3 +14603,41 @@ body.boxed-wrapper .main-menu__phone {
     width: 100%; /* Ensure the image remains responsive */
   }
 }
+
+
+
+/* marquee style */
+
+.icon-marquee {
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  background-color: #002d62;
+  padding: 50px 10px 50px 10px;
+}
+
+.icon-container {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+}
+
+.icon {
+  height: 80px;
+  margin: 10px 30px;
+}
+.marquee-heading{
+  text-align: center;
+  color: white;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
