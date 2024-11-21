@@ -6022,7 +6022,7 @@ body.locked .page-wrapper {
   font-size: 19px;
   font-weight: 600;
   text-transform: uppercase;
-  max-width: 100px;
+  
   margin: 0;
 }
 
@@ -14451,4 +14451,155 @@ body.boxed-wrapper .main-menu__phone {
 
 .cpd-btn:hover{
   color: white;
+}
+
+
+
+  :root {
+            --nisoz-base: #007bff; /* Adjust to match original design */
+            --nisoz-black4: #333;
+            --saz-white: #ffffff;
+           
+        }
+
+        .about-one {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+      btn:hover .nisoz-btn__shape {
+            transform: scale(1);
+        }
+
+        .about-one__fact-wrapper {
+            position: relative;
+            background-color: var(--nisoz-base);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 34px 40px 38px;
+            
+            margin: -82px auto 0;
+        }
+
+        .about-one__fact {
+            position: relative;
+            padding: 0 0 0 78px;
+        }
+
+        .about-one__fact__icon {
+            font-size: 62px;
+            line-height: 1;
+            color: var(--nisoz-black4);
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 62px;
+        }
+
+        .about-one__fact__count {
+            font-family: var(--heading-font);
+            font-size: 48px;
+            line-height: 1;
+            color: var(--saz-white);
+            margin: 0;
+        }
+
+        .about-one__fact__title {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 500;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            color: var(--saz-white);
+            margin: 0;
+        }
+
+        @media (max-width: 767px) {
+            .about-one__fact-wrapper {
+                flex-direction: column;
+                padding: 34px 25px 38px;
+                max-width: calc(100% - 20px);
+                margin-top: -45px;
+            }
+
+            .about-one__fact {
+                padding: 0;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .about-one__fact__icon {
+                position: relative;
+                margin-bottom: 12px;
+            }
+
+            .about-one__fact__title {
+                letter-spacing: 1px;
+            }
+        }
+
+
+
+
+/* company profile css */
+
+.company-prof-container > div:last-child {
+  display: flex;
+  justify-content: center; /* Center the button */
+  align-items: center; /* Vertically align the button */
+  height: 100%; /* Ensure full height alignment */
+}
+
+/* Button styling */
+.download-btn {
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white; /* Ensure text is visible */
+  padding: 0.75rem 1.5rem; /* Add padding for better visual balance */
+  font-size: 1rem;
+  border-radius: 5px; /* Slightly rounded corners for a modern look */
+  text-align: center;
+  display: inline-block; /* Ensure proper spacing */
+}
+
+/* Button hover effects */
+.download-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+  color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  .company-prof-container > div:last-child {
+    justify-content: flex-start; /* Align the button to the left for smaller screens */
+    margin-top: 1rem; /* Add spacing above the button */
+  }
+
+  .download-btn {
+    width: 100%; /* Full width button for smaller screens */
+    max-width: 250px; /* Optional: Limit maximum width */
+  }
+}
+
+
+/* Company Profile - Adjust Image Size on Larger Screens */
+@media (min-width: 768px) {
+  .company-prof-container > div:first-child {
+    width: 90%; /* Increase the image container width */
+    flex-shrink: 0;
+  }
+  
+  .company-profile-image-wrapper img {
+    max-height: 400px; /* Increase the maximum height of the image */
+    object-fit: cover;
+    width: 100%; /* Ensure the image remains responsive */
+  }
 }
