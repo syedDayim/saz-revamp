@@ -14623,12 +14623,13 @@ body.boxed-wrapper .main-menu__phone {
 }
 
 .icon {
-  height: 80px;
+  height: 70px;
   margin: 10px 30px;
 }
 .marquee-heading{
   text-align: center;
   color: white;
+  margin-bottom: 50px;
 }
 
 @keyframes marquee {
