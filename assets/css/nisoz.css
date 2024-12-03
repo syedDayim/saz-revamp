@@ -7479,9 +7479,6 @@ body.locked .page-wrapper {
   background-color: var(--nisoz-white);
 }
 
-.cta-two-about {
-  padding: 0 0 120px;
-}
 
 @media (max-width: 767px) {
   .cta-two-about {
@@ -14618,7 +14615,7 @@ body.boxed-wrapper .main-menu__phone {
 
 .icon-container {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 40s linear infinite; /* Increased duration to 40 seconds */
   white-space: nowrap;
 }
 
@@ -14626,7 +14623,8 @@ body.boxed-wrapper .main-menu__phone {
   height: 70px;
   margin: 10px 30px;
 }
-.marquee-heading{
+
+.marquee-heading {
   text-align: center;
   color: white;
   margin-bottom: 50px;
