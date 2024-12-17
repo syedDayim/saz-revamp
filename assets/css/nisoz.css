@@ -2949,7 +2949,7 @@ h6 {
 }
 
 .section-title__title {
-  font-size: 40px;
+  font-size: 53px;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--nisoz-black2);
@@ -6765,7 +6765,7 @@ body.locked .page-wrapper {
   background-repeat: no-repeat;
   background-color: var(--nisoz-white);
   counter-reset: count;
-  padding: 120px 0;
+  padding: 70px 0;
 }
 
 @media (max-width: 767px) {
@@ -6806,7 +6806,7 @@ body.locked .page-wrapper {
 .service-one__text {
   position: relative;
   font-size: 18px;
-  margin: 30px 0 0;
+  margin: 100px 0 0;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 39px;
